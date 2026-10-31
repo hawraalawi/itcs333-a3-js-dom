@@ -1,3 +1,4 @@
+// ITCS333 A3
 // ITCS333 A3 starter — implement the to-do app per README.
 // You may wrap everything in a DOMContentLoaded handler or an IIFE.
 // Requirements: add / toggle-complete / delete / filter / counter,
@@ -24,6 +25,7 @@ todoForm.addEventListener('submit', function(e) {
   });
 
   function addTask() {
+
     const text = todoInput.value.trim();
 
     if (text === '') {
@@ -52,6 +54,7 @@ todoForm.addEventListener('submit', function(e) {
   }
 
   function handleListClick(e) {
+
     const target = e.target;
 
     if (target.className === 'delete-btn') {
@@ -137,5 +140,5 @@ todoForm.addEventListener('submit', function(e) {
   }
 
   updateCounterAndFilters();
-  
+
   });
